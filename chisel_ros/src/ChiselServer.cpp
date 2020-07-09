@@ -554,11 +554,11 @@ namespace chisel_ros
             return;
         }
 
-        chisel::Vec3 lightDir(0.8f, -0.2f, 0.7f);
+        chisel::Vec3 lightDir(1.0f, -1.0f, 1.0f);
         lightDir.normalize();
-        chisel::Vec3 lightDir1(-0.5f, 0.2f, 0.2f);
+        chisel::Vec3 lightDir1(1.0f, 1.0f, 1.0f);
         lightDir.normalize();
-        const chisel::Vec3 ambient(0.2f, 0.2f, 0.2f);
+        const chisel::Vec3 ambient(0.7f, 0.7f, 0.7f);
         //int idx = 0;
         for (const std::pair<chisel::ChunkID, chisel::MeshPtr>& meshes : meshMap)
         {
